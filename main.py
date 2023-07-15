@@ -267,4 +267,23 @@ I'm trying to be the best I can be!
 # myCar[1] = "Sportage"
 # print((myCar))
 
-print("Our first commit")
+# print("Our first commit")
+
+"""
+Tuples used to store multiple items in a single variable.
+Tuple is also an ordered collection that in immutable.
+Tuples are written with ()
+Allow duplicate values
+Tuples can have any data type
+type() is <class 'tuple'>
+"""
+# To create a tuple with a single item
+# thistuple = ("apple",)
+
+# Tuple constructor tuple()
+# thistuple = tuple(()) #must use double parenthesis to construct
+
+"""Indexing is the same as indexing through a list"""
+
+
+
