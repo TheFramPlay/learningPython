@@ -285,5 +285,50 @@ type() is <class 'tuple'>
 
 """Indexing is the same as indexing through a list"""
 
+# Check if item exists
+# thistuple = ("apple", "pear", "orange", "banana")
+# if "apple" in thistuple:
+#     print("apple is in the tuple")
 
+"""
+Since tuples are immutable, there is a workaround
+You can change a tuple to a list,
+make the change to the list, 
+then change it back to a tuple.
+"""
+
+# x = ("apple", "pear", "orange", "banana")
+# y = list(x)
+# y[1] = "kiwi"
+# x = tuple(y)
+# print(x)
+
+"""
+To add items to a tuple, you will do the same thing
+change tuple to list
+use the append() method on the list
+then convert it back to a tuple
+"""
+
+"""
+You can add a tuple to a tuple
+"""
+# thistuple = ("apple", "banana", "cherry")
+# y = ("orange",)
+# thistuple += y
+#
+# print(thistuple)
+
+"""
+since you can't remove items from tuples
+you must use the same method of converting to list
+then remove the item and convert it back to 
+a tuple
+
+You can fully delete a tuple by using
+the del keyword.
+"""
+# thistuple = ("apple", "banana", "cherry")
+# del thistuple
+# print(thistuple) #this will raise an error because the tuple no longer exists
 
