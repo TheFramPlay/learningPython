@@ -271,7 +271,7 @@ I'm trying to be the best I can be!
 
 """
 Tuples used to store multiple items in a single variable.
-Tuple is also an ordered collection that in immutable.
+Tuple is also an ordered collection that is immutable.
 Tuples are written with ()
 Allow duplicate values
 Tuples can have any data type
@@ -332,4 +332,62 @@ the del keyword.
 # del thistuple
 # print(thistuple) #this will raise an error because the tuple no longer exists
 
+"""
+Unpacking - allows us to unpack the tuple and assign it to a new
+variable name, respectively.
+"""
+# x = (1, 2, 3, 4)
+# (green, yellow, red, blue) = x
+#
+# print(green)
+# print(yellow)
+# print(red)
+# print(blue)
 
+#Asterisk
+"""
+If the number of variables is less than the number of values,
+you can add an * to the variable name and the values will be 
+assigned to the variable as a list:
+"""
+
+
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+#
+# (green, yellow, *red) = fruits
+#
+# print(green) #output apple
+# print(yellow) #output banana
+# print(red) #output ["cherry", "strawberry", "raspberry"]
+
+
+"""
+If the asterisk is added to another variable name than the 
+last, Python will assign values to the variable until the 
+number of values left matches the number of variables left.
+"""
+
+# fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+#
+# (green, *tropic, red) = fruits
+#
+# print(green)
+# print(tropic)
+# print(red)
+
+# for loop
+
+# thistuple = ("apple", "banana", "cherry")
+# for x in thistuple:
+#     print(x)
+
+# loop through index
+# thistuple = ("apple", "banana", "cherry")
+# for i in range(len(thistuple)):
+#     print(thistuple[i])
+
+# thistuple = ("apple", "banana", "cherry")
+# i = 0
+# while i < len(thistuple):
+#     print(thistuple[i])
+#     i += 1
