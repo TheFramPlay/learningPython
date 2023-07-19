@@ -571,3 +571,47 @@ IN SETS, AND ARE TREATED AS DUPLICATES
 #
 # z = x.symmetric_difference(y)
 # print(z)
+
+"""PYTHON DICTIONARIES"""
+'''
+Dictionaries are used to store data values in key:value pairs.
+dictionaries are ordered as of py.version3.7. But are unordered in previous versions
+they are written in curly brackets {} and have keys and values:
+'''
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict)
+
+'''
+DICTIONARIES ARE ORDERED, CHANGEABLE, AND DOES NOT ALLOW DUPLICATES
+you can refer to an item by their key name.
+'''
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict["brand"])
+
+"""
+Dictionaries can have any data type, you can use the len() function to see the
+length of a dictionary. dictionaries are objects and w/ a data type of 'dict'
+you can also use the dict() constructor to make a dictionary as well.
+"""
+
+"""
+You can access items in a dictionary by referring to it's key name inside square brackets
+"""
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# x = thisdict["model"]
+# print(x)
+
+
