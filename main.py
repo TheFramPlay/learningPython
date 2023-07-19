@@ -344,13 +344,12 @@ variable name, respectively.
 # print(red)
 # print(blue)
 
-#Asterisk
+# Asterisk
 """
 If the number of variables is less than the number of values,
 you can add an * to the variable name and the values will be 
 assigned to the variable as a list:
 """
-
 
 # fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 #
@@ -392,4 +391,160 @@ number of values left matches the number of variables left.
 #     print(thistuple[i])
 #     i += 1
 
+"""
+We did some work on our work laptop. We may or may not import it later.
+We finished Tuples and are now on Sets
+"""
+
+# NOTES CONTINUED FROM WORK LAPTOP
+
+"""
+Once a set is created, you cannot change its items, but can add new items.
+"""
+
+"""To add an item to a set, use the add() method"""
+
+# thisset = {"apple", "banana", "cherry"}
+#
+# thisset.add("orange")
+#
+# print(thisset)
+
+"""To add items from another set into the current one,
+use the update() method"""
+
+# thisset = {"apple", "banana", "cherry"}
+# tropical = {"pineapple", "mango", "papaya"}
+#
+# thisset.update(tropical)
+# print(thisset)
+
+# ADD ANY ITERABLE
+"""The object in the update() method does not have to be a set,
+it can be any iterable object (tuples, lists, dictionaries, etc.)"""
+
+# thisset = {"apple", "banana", "cherry"}
+# mylist = ["kiwi", "orange"]
+#
+# thisset.update(mylist)
+#
+# print(thisset)
+
+# REMOVE ITEM FROM SET
+"""To remove an item, use remove(), or the discard() method"""
+
+# thisset = {"apple", "banana", "cherry"}
+#
+# thisset.remove("banana")
+#
+# print(thisset)
+
+# NOTE: If the item doesn't exist, remove() will give error
+
+# Using discard() method
+# NOTE: if item doesn't exist, discard() will NOT raise an error
+
+# thisset = {"apple", "banana", "cherry"}
+#
+# thisset.discard("banana")
+#
+# print(thisset)
+
+"""
+You can also use the pop() method to remove a random item,
+since there is no index, the removed item will be random.
+"""
+
+# thisset = {"apple", "banana", "cherry"}
+#
+# x = thisset.pop()
+#
+# print(x)
+#
+# print(thisset)
+
+"""
+#CLEAR METHOD
+clear() method empties the set
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.clear()
+
+print(thisset)
+/////////////////////////////
+/////////////////////////////
+#DEL KEYWORD
+del keyword deletes the set entirely
+
+thisset = {"apple", "banana", "cherry"}
+
+del thisset
+
+print(thisset)
+"""
+
+# LOOP ITEMS
+# thisset = {"apple", "banana", "cherry"}
+#
+# for x in thisset:
+#     print(x)
+
+# JOIN TWO SETS
+"""
+You can use the union() method:
+    This returns a new set containing all items of both sets.
+"""
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+#
+# set3 = set1.union(set2)
+# print(set3)
+"""  
+You can use the update() method:
+    This inserts all the items from one set into another
+"""
+# set1 = {"a", "b" , "c"}
+# set2 = {1, 2, 3}
+#
+# set1.update(set2)
+# print(set1)
+# NOTE: Both union() and update() will exclude any duplicate items.
+
+"""
+In python sets you can keep ONLY the duplicates
+To do this you use the intersection_update() method
+This method will only keep the items present in both sets.
+"""
+
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
+#
+# x.intersection_update(y)
+#
+# print(x) # output will be "apple"
+
+"""
+You can also use the intersection() method to return a new set,
+that only contains the items that are present in both sets
+"""
+
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
+#
+# z = x.intersection(y)
+#
+# print(z) # output will be apple
+
+"""
+Keep all, but NOT the duplicates
+To do this you use the
+symmetric_difference_update() method
+"""
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
+#
+# x.symmetric_difference_update(y)
+#
+# print(x) # The output will leave "apple" out
 
