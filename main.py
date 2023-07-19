@@ -515,6 +515,7 @@ You can use the update() method:
 In python sets you can keep ONLY the duplicates
 To do this you use the intersection_update() method
 This method will only keep the items present in both sets.
+**This will update one of the sets with the other**
 """
 
 # x = {"apple", "banana", "cherry"}
@@ -540,6 +541,7 @@ that only contains the items that are present in both sets
 Keep all, but NOT the duplicates
 To do this you use the
 symmetric_difference_update() method
+**This will update one of the sets with the other**
 """
 # x = {"apple", "banana", "cherry"}
 # y = {"google", "microsoft", "apple"}
@@ -548,3 +550,24 @@ symmetric_difference_update() method
 #
 # print(x) # The output will leave "apple" out
 
+"""
+You can also use just symmetric_difference() without the update
+this will create a new set with the two other lists leaving out 
+the duplicate item
+"""
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
+#
+# z = x.symmetric_difference(y)
+#
+# print(z)
+
+"""
+NOTE: AGAIN THE VALUES TRUE AND 1 ARE CONSIDERED THE SAME VALUE
+IN SETS, AND ARE TREATED AS DUPLICATES
+"""
+# x = {"apple", "banana", "cherry", True}
+# y = {"google", 1, "apple", 2}
+#
+# z = x.symmetric_difference(y)
+# print(z)
